@@ -16,9 +16,7 @@ text-align:center;
 #gallery {
 
     display:flex;
-    flex-flow:row wrap;
-    justify-content:left;
-    align-items: flex-start;
+    flex-flow:nowrap;
 }
 
 a:-webkit-any-link {
@@ -62,4 +60,5 @@ font-color:white;
 h3{
     text-align: left;
 }
+
 
