@@ -1,3 +1,7 @@
+html{
+    display:block;
+}
+
 body {
 
 margin:0;
@@ -9,10 +13,53 @@ text-align:center;
 
 }
 
-.gallery {
+#gallery {
 
     display:flex;
     flex-flow:row wrap;
-    justify-content:center;
+    justify-content:left;
     align-items: flex-start;
 }
+
+a:-webkit-any-link {
+
+    color: -webkit-link;
+
+}
+
+main {
+    background:white;
+    width:90%;
+    margin:auto;
+    border-radius:5px;
+    padding:2rem 0;
+
+}
+.artObject {
+max-width: 80%;
+max-height:20rem;
+margin:1rem;
+
+}
+
+
+ footer{
+font-color:white;
+
+ }
+
+ input, label{
+
+    display:flex;
+ }
+
+ button{
+
+    float:left;
+ }
+ 
+
+h3{
+    text-align: left;
+}
+
