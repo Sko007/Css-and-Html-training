@@ -2,11 +2,11 @@
 
 function insertData(){
     
-// console.log("hello from insertData function")
-// if(textInput.value === "" || firstName.value === ""){
-//     alert("Please Insert a name and a textmessage");
+console.log("hello from insertData function")
+if(textInput.value === "" || firstName.value === ""){
+    alert("Please Insert a name and a textmessage");
 
-// }else{
+}else{
 
     const textInput = document.getElementById("textInput");
     const firstName = document.getElementById("firstName");
@@ -23,7 +23,7 @@ function insertData(){
 
 
     //adjust elements I created
-    headline.innerHTML = userName;
+    headline.innerHTML = userName +" "+ "Said:";
     paragraph.innerHTML = message;    
 
     section.classList.add("section")
@@ -35,8 +35,9 @@ function insertData(){
     const commentSection = document.getElementById("commentOut");
     commentSection.appendChild(section)
 
- 
+    //clear values
+
 
 }
 
-// }
+ }
