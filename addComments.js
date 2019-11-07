@@ -1,13 +1,12 @@
 
 
-
-
 function insertData(){
     
 // console.log("hello from insertData function")
-if(textInput.value === "" || firstName.value === ""){
-    alert("Please Insert a name and a textmessage");
-}else{
+// if(textInput.value === "" || firstName.value === ""){
+//     alert("Please Insert a name and a textmessage");
+
+// }else{
 
     const textInput = document.getElementById("textInput");
     const firstName = document.getElementById("firstName");
@@ -22,27 +21,22 @@ if(textInput.value === "" || firstName.value === ""){
     const headline = document.createElement("h5");
     const paragraph = document.createElement("p");
 
-    console.log(section);
+
     //adjust elements I created
-    
-    // paragraph.innerHTML = message;
-    // section.classList.add("message");
-    // section.appendChild(h5);
-    // section.appendChild(p);
+    headline.innerHTML = userName;
+    paragraph.innerHTML = message;    
 
-    // //display Elements
-    
-    // const textOut = document.getElementById("commentOutPut");
-    // textOut.appenChild(section);
-    
+    section.classList.add("section")
+    section.appendChild(headline)
+    section.appendChild(paragraph)
 
 
-    //reset form value
+    // Display data
+    const commentSection = document.getElementById("commentOut");
+    commentSection.appendChild(section)
 
-    firstName.value = null
-    textArea.value = null
-
+ 
 
 }
 
-}
+// }
