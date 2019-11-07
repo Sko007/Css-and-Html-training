@@ -27,6 +27,7 @@ if(textInput.value === "" || firstName.value === ""){
     paragraph.innerHTML = message;    
 
     section.classList.add("section")
+    paragraph.classList.add("para")
     section.appendChild(headline)
     section.appendChild(paragraph)
 

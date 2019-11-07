@@ -15,7 +15,6 @@ font-family:arial;
 }
 
 form{
-    padding-right:10%;
 
 
 }
@@ -68,6 +67,7 @@ h1, h2 {
 
 h3{
     text-align: left;
+    margin:1rem;
 }
 
 
@@ -158,6 +158,23 @@ main{
 
 .section {
 
-    color:red;
-    border: 1px solid black;
+    display: block;
+
+
+}
+
+.para{
+    margin:0px;
+    background-color: #F9F9F9;
+
+}
+
+h5{
+    border-bottom-color: black;
+    margin:0px;
+    padding-bottom: 1rem;
+    padding-top: 1.0rem;
+    background-color: #F9F9F9;
+
+
 }
