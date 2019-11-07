@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css">
-    <script src="javascript.js">    </script>
 <title>This is a very famous picture in the 21. centuary</title>
 </head>
 
@@ -14,29 +13,39 @@
         
            
             <a class="anchorTag" href="./pages/detail-page.html"><img class="artObject1" alt="" src="../img1.jpg"></a>
-            <form>
-              <h3>Comments</h3><br>
+            
+            <section id="commentOutPut">  
+                <h3>Comments</h3><br>
+            
+            <form onsubmit="insertData(); return false">
 
                  
        
            
             
                     <label name="firstname">Severin</label>
-                    <input type="text" name="firstname">
+                    <input type="text" name="firstname" id="firstName">
                
                     
                 
-                  <label name="text">Message</label>                    
-                    <textarea rows="6" type="text" name="text"></textarea> 
+                    <label name="text">Message</label>                    
+                    <textarea rows="6" type="text" id="textInput">ss</textarea> 
                 
                     
                 
                     
-                    <button type="submit">Psst your comment</button>
-                <p class="comments"><strong>Severin Said:</strong> this is definitly one of my favourites</p>
+                    
+                    <button type="submit" id="submitButton">Push your comment</button>
+
 
                 </form>
 
+
+
+                     <h4 class="name">Severin Said:</h4>
+                    <p class="comments"> this is definitly one of my favourites</p>
+                
+                </section>
                     
 
            
@@ -52,6 +61,7 @@
     </main>
 
 
+    <script src="../addComments.js">   </script>
 
 </body>
 
